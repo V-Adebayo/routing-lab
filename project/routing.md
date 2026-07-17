@@ -26,7 +26,7 @@ ipconfig
 
 ### Screenshot
 
-![ipconfig](https://github.com/V-Adebayo/routing-lab/blob/main/project/ipconfig.pngs)
+![ipconfig](https://github.com/V-Adebayo/routing-lab/blob/main/project/ipconfig.png)
 
 ### What I observed
 
@@ -71,7 +71,7 @@ ping google.com
 
 ### Screenshot
 
-![ping]((https://github.com/V-Adebayo/routing-lab/blob/main/project/ping-google.png))
+![ping](https://github.com/V-Adebayo/routing-lab/blob/main/project/ping-google.png))
 
 ### What I observed
 
@@ -95,12 +95,7 @@ tracert google.com
 
 ### Screenshot
 
-![tracert]([https://github.com/V-Adebayo/routing-lab/blob/main/project/tracert-google.png
-]
-
-)
-)
-
+![tracert](https://github.com/V-Adebayo/routing-lab/blob/main/project/tracert-google.png)
 ### What I observed
 
 The route started from my local gateway and passed through several routers before reaching Google's server.
