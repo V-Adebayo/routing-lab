@@ -26,7 +26,7 @@ ipconfig
 
 ### Screenshot
 
-![ipconfig](screenshots/ipconfig.png)
+![ipconfig](https://github.com/V-Adebayo/routing-lab/blob/main/project/ipconfig.pngs)
 
 ### What I observed
 
@@ -50,7 +50,8 @@ nslookup google.com
 
 ### Screenshot
 
-![nslookup](screenshots/nslookup.png)
+![nslookup](https://github.com/V-Adebayo/routing-lab/blob/main/project/nslookup.png)
+
 
 ### What I observed
 
@@ -70,7 +71,7 @@ ping google.com
 
 ### Screenshot
 
-![ping](screenshots/ping.png)
+![ping]((https://github.com/V-Adebayo/routing-lab/blob/main/project/ping-google.png))
 
 ### What I observed
 
@@ -94,7 +95,11 @@ tracert google.com
 
 ### Screenshot
 
-![tracert](screenshots/tracert.png)
+![tracert]([https://github.com/V-Adebayo/routing-lab/blob/main/project/tracert-google.png
+]
+
+)
+)
 
 ### What I observed
 
