@@ -1,23 +1,22 @@
-
 # Network Connectivity Investigation
 
 ## Objective
 
-This investigation demonstrates how a computer reaches **google.com** by checking the local network configuration, resolving the domain name, testing network connectivity, and tracing the path packets take across the network.
+The aim of this investigation was to check how my computer connects to **google.com** using basic Windows networking commands.
 
 ---
 
 ## Tools Used
 
 - Command Prompt
-- `ipconfig`
-- `nslookup`
-- `ping`
-- `tracert`
+- ipconfig
+- nslookup
+- ping
+- tracert
 
 ---
 
-## Step 1: Check Network Configuration
+## 1. Check the Network Configuration
 
 ### Command
 
@@ -29,21 +28,19 @@ ipconfig
 
 ![ipconfig](screenshots/ipconfig.png)
 
-### Explanation
+### What I observed
 
-The `ipconfig` command displays the current network configuration of the computer.
+The command displayed the IP configuration of my computer.
 
-From the output:
+- IPv4 Address: 172.20.10.2
+- Subnet Mask: 255.255.255.240
+- Default Gateway: 172.20.10.1
 
-- IPv4 Address: **172.20.10.2**
-- Subnet Mask: **255.255.255.240**
-- Default Gateway: **172.20.10.1**
-
-This confirms that the computer has a valid IP address and is connected to the network through its default gateway.
+This shows that my PC has a valid IP address and is connected to the network through the default gateway.
 
 ---
 
-## Step 2: Resolve the Domain Name
+## 2. Resolve the Domain Name
 
 ### Command
 
@@ -55,15 +52,15 @@ nslookup google.com
 
 ![nslookup](screenshots/nslookup.png)
 
-### Explanation
+### What I observed
 
-The `nslookup` command queries the DNS server to translate **google.com** into its IP address.
+The DNS server successfully translated **google.com** into an IP address.
 
-The output confirms that the DNS server successfully resolved the domain name, allowing the computer to locate Google's servers.
+This confirms that DNS resolution is working properly.
 
 ---
 
-## Step 3: Test Connectivity
+## 3. Test Connectivity
 
 ### Command
 
@@ -75,21 +72,19 @@ ping google.com
 
 ![ping](screenshots/ping.png)
 
-### Explanation
+### What I observed
 
-The `ping` command sends ICMP Echo Request packets to the destination and waits for a reply.
+The command sent four packets to Google's server and received replies successfully.
 
-The output shows:
+- 4 packets sent
+- 4 packets received
+- 0% packet loss
 
-- Replies received successfully
-- No packet loss
-- Stable response times
-
-This confirms that the computer can communicate successfully with Google's server.
+This shows that my computer can reach Google's server.
 
 ---
 
-## Step 4: Trace the Route
+## 4. Trace the Route
 
 ### Command
 
@@ -101,21 +96,15 @@ tracert google.com
 
 ![tracert](screenshots/tracert.png)
 
-### Explanation
+### What I observed
 
-The `tracert` command displays each network device (hop) that packets pass through before reaching the destination.
+The route started from my local gateway and passed through several routers before reaching Google's server.
 
-The trace begins with the local gateway, continues through several ISP routers, and ends at Google's server. A timeout on one hop is normal because some routers do not respond to traceroute requests.
+One hop timed out, which is normal because some routers do not reply to traceroute requests.
 
 ---
 
 ## Conclusion
 
-The investigation confirmed that the computer was properly connected to the network and could successfully communicate with Google's servers.
-
-- The local network configuration was valid.
-- DNS successfully resolved the domain name.
-- The destination responded to ping requests without packet loss.
-- Traceroute showed the path taken through the local gateway, ISP routers, and finally Google's network.
-
+The investigation showed that my computer is connected to the network correctly. DNS resolved the website successfully, the server responded to ping requests, and traceroute showed the path taken to reach Google's network.
 Overall, the network connection was functioning as expected.
